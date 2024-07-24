@@ -12,12 +12,12 @@ public class Person {
 	
 	public String getName() {
 		
-		return this.name;
+		return name;
 	}
 	
     public String getAddress() {
 		
-		return this.address;
+		return address;
 	}
 	
     
@@ -28,7 +28,7 @@ public class Person {
     
     public String toString() {
     	
-    	return "[ "+ this.name +" ( " +this.address + " ) "   + "]";
+    	return "[ "+ name +" ( " + address + " ) "   + "]";
     }
     
 
