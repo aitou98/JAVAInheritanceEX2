@@ -15,12 +15,47 @@ public class Student extends Person {
 		
 	}
 	
+	
+	
+	public void addCourseGrade(String course , int grade) {
+		courses[numCourses] = course;
+		grades[numCourses] = grade ;
+		
+		numCourses++;
+	
+		
+	}
+	
 	@Override
 	   public String toString() {
 	      return "Student: " + super.toString();
 	   }
-
-
+		
+	 public void printGrades() {
+	      System.out.print(this);
+	      for (int i = 0; i < numCourses; ++i) {
+	         System.out.print(" " + courses[i] + ":" + grades[i]);
+	      }
+	      System.out.println();
+	   }
+	 
+	 
+	  public double getAverageGrade() {
+	      int sum = 0;
+	      for (int i = 0; i < numCourses; i++ ) {
+	         sum += grades[i];
+	      }
+	      return (double)sum/numCourses;
+	   }
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 
 }
